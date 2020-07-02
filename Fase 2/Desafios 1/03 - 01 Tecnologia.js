@@ -14,7 +14,7 @@ for (let x = 0; x < users.length; x++) {
         }
     }
     console.log(`${users[x].nome} trabalha com ${tecnologias}`)
-
+}
 
 //Fórmula mais fácil:
 

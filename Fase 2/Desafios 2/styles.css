@@ -1,0 +1,77 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap";
+:root{ /*Tranforma uma ferramenta para usar de forma global, apenas repetindo as variaveis.*/
+    --green-color: rgb(157, 255, 0);
+}
+
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+body{
+    color: white;
+    background: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background: rgba(0, 0, 0, 0.158);
+    padding: 30px;
+    border-bottom: 8px solid rgba(255, 255, 255, 0.089);
+}
+header div{
+    text-align: center;
+    
+}
+.links {
+    text-align: center;
+}
+
+.links a{
+    color: white;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 50px; /*Espaçamento entre as palavras*/
+    text-decoration: none; /*Aqui tira a linha marcada de links*/
+}
+.links a:hover {
+    color: var(--green-color);
+    transition: color 620ms;
+}
+
+#SobreRocketseat{
+    color: white;
+    padding: 15px;
+}
+
+#SobreRocketseat img{
+    border-radius: 50%;
+    margin-top: 20px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#SobreRocketseat h1{
+    font-size: 100px;
+}
+
+#SobreRocketseat p{
+    color: white;
+    font-size: 20px;
+    max-width: 700px;
+    padding: 20px;
+    margin: 1px auto;
+
+}
+#SobreRocketseat a{
+    border-bottom: 1px solid var(--green-color);
+    padding: 10px;
+}
+
+
+#SobreRocketseat ul{
+    width: 100px;
+    height: auto;
+    margin: 1px auto;
+	position: center;
+	transform: translateY(-10%);
+}
