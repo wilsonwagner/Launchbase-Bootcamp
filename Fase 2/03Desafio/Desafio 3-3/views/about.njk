@@ -1,0 +1,21 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Sobre</title>
+{% endblock %}
+
+{% block content %}
+<div id="SobreRocketseat" class="links">
+    <img src="{{about.avatar}}" alt="Logo da Rocketseat">
+    <h1>{{about.name}}</h1>
+    <h2>{{about.name2}}</h2>
+    <p>{{about.name3}}</p>
+    <ul class="links">
+        <li>HTML</li> <li>CSS</li> <LI>React</LI> <li>React Native</li>
+    </ul>
+    {% for link in about.links %}
+        <a href="{{link.url}}">{{link.name}}</a>
+    {% endfor %}
+</div>
+
+{% endblock %}

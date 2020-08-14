@@ -1,0 +1,28 @@
+{% extends "layout.njk" %}
+{% block head %}
+
+<title>Projetos - Wilson Wagner</title>
+
+{% endblock %}
+
+{% block content %}
+
+<div id="TITULO">
+    <h1>CONTEÚDOS</h1>
+</div>
+
+<section class="grids">
+    <div class="grid" id="{{item.id}}">
+        <div class="gridImagem">
+            <img src="{{item.icon}}" alt="Imagem do {{item.id}}">
+        </div>
+        <div class="gridConteudo">
+            <p>{{item.id}}</p>
+        </div>
+        <div class="gridInfo">
+            <P>{{item.modules}}</P>
+            <p class="gridPrice">{{item.price}}</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

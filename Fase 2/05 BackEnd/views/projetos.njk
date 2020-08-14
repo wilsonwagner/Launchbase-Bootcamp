@@ -1,0 +1,39 @@
+{% extends "layout.njk" %}
+{% block head %}
+
+<title>Projetos - Wilson Wagner</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+{% endblock %}
+{% block content %}
+
+        <div id="Foto">
+            <h1>Projetos prontos</h1>
+        </div>
+
+        <section class="cards">
+            {% for item in items %}
+            <div class="card" id="{{item.id}}">
+                <div class="card__image_Container {{ "featured-wrapper" if item.featured}}">
+                    <img class="imgProjects" src="{{item.image}}" alt="imagem de {{item.title}}">
+                    {% if item.featured %}
+                         <div class="featured"> Destaque </div>
+                    {% endif %}
+                </div>
+    
+                <div class="card_conteudo">
+                    <p><a href="">{{item.title}}</a></p>
+                </div>
+    
+                <div class="card_info">
+                    <p>{{item.ferraments}}</p>
+                    <p class="card_price"><a href="">{{item.price}}</a></p>
+                </div>
+            </div>
+            {% endfor %}
+        </section>
+
+        <script src="/scripts.js"></script>
+
+{% endblock %}

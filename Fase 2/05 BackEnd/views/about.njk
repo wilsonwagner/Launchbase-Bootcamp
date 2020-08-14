@@ -1,0 +1,22 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Sobre - Wilson Wagner</title>
+{% endblock %}
+
+{% block content %}
+
+<div id="Foto">
+    <img src="https://avatars1.githubusercontent.com/u/45144908?s=460&u=1863ddc7f8b3457b9114902676a335415b2109e0&v=4" alt="Foto de Wilson">
+    <h1>{{about.name}}</h1>
+    <h2>{{about.role}}</h2>
+    <p>{{about.description }}</p>
+</div>
+
+<div id="links-footer" class="links">
+    {% for link in about.links %}
+    <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+    {% endfor %}
+</div>
+
+{% endblock %}
